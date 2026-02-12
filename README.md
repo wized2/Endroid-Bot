@@ -310,7 +310,3 @@ SOFTWARE.
 </div>
 
 ---
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/wized2/Endroid-Bot/refs/heads/main/assets/banner.png" alt="Endroid Manager Footer" width="80%">
-</div>
