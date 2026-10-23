@@ -5,6 +5,28 @@ from discord.ext import commands
 import config
 
 SECTIONS = {
+    "gen": (
+        "General",
+        "Community tools for any server.",
+        [
+            ("/snipe", "Last deleted message"),
+            ("/afk", "Set AFK status"),
+            ("/poll", "Create a poll"),
+            ("/remind", "Personal reminder"),
+            ("/warn", "Warn a member"),
+            ("/warnings", "List warns"),
+            ("/setwelcome", "Welcome channel"),
+            ("/say", "Bot say (mods)"),
+            ("/embed", "Post embed (mods)"),
+            ("/translate", "Translate text"),
+            ("/urban", "Urban Dictionary"),
+            ("/meme", "Random meme"),
+            ("/quote", "Random quote"),
+            ("/password", "Password generator"),
+        ],
+        config.Colors.PRIMARY,
+    ),
+
     "mod": (
         "Moderation",
         "Role-gated tools for keeping the server clean.",
@@ -66,6 +88,7 @@ def build_embed(key: str) -> discord.Embed:
 class HelpSelect(discord.ui.Select):
     def __init__(self):
         options = [
+            discord.SelectOption(label="General", value="gen", description="Polls, AFK, snipe, fun APIs"),
             discord.SelectOption(label="Moderation", value="mod", description="Kick, ban, timeout, clear"),
             discord.SelectOption(label="Utility", value="util", description="Weather, info, ping"),
             discord.SelectOption(label="Fun", value="fun", description="Jokes, dice, 8ball"),
