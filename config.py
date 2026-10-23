@@ -119,26 +119,18 @@ class Icons:
 # ==============================
 
 class Colors:
+    # Modern dark UI palette (Discord-friendly)
+    PRIMARY = 0x5865F2      # blurple
+    SUCCESS = 0x57F287
+    ERROR = 0xED4245
+    WARNING = 0xFEE75C
+    INFO = 0x00B0F4
+    ACCENT = 0xEB459E
+    DARK = 0x2B2D31
+    MOD = 0xED4245
+    WEATHER = 0x57F287
+    FUN = 0xFEE75C
 
-    # Discord color codes (decimal)
-
-    SUCCESS = 0x00FF00  # Green
-
-    ERROR = 0xFF0000    # Red
-
-    WARNING = 0xFFA500  # Orange
-
-    INFO = 0x3498DB     # Blue
-
-    NEUTRAL = 0x7289DA  # Blurple
-
-    DANGER = 0x992D22   # Dark Red
-
-# ==============================
-
-# BOT CONFIGURATION
-
-# ==============================
 
 class BotConfig:
 

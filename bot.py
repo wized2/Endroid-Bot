@@ -6,7 +6,10 @@ import asyncio
 import config
 
 # Load environment variables
-load_dotenv()
+try:
+    load_dotenv()
+except Exception:
+    pass
 
 # Bot configuration
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
